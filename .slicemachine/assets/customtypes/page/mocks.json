@@ -1,0 +1,49 @@
+{
+  "uid": {
+    "__TYPE__": "UIDContent",
+    "value": "basket"
+  },
+  "slices": {
+    "__TYPE__": "SliceContentType",
+    "value": [
+      {
+        "key": "heading$5a234701-36e8-4a3c-8041-232b3b4f3e48",
+        "name": "heading",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "title": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading1",
+                  "content": {
+                    "text": "Black"
+                  }
+                }
+              ]
+            },
+            "description": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Sit aliquip laboris ut anim reprehenderit ex id fugiat ea laboris qui nulla commodo voluptate ad. Dolor dolore esse pariatur eiusmod ad laborum nulla magna elit ipsum eu id non qui."
+                  }
+                }
+              ]
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
