@@ -10,10 +10,18 @@ export const repositoryName = prismic.getRepositoryName(sm.apiEndpoint)
 // Update the routes array to match your project's route structure
 /** @type {prismic.ClientConfig['routes']} **/
 const routes = [
+  // ----- Dynamic -----
   {
     type: "page",
     path: "/:uid",
   },
+
+  {
+    type: "post",
+    path: "/posts/:uid",
+  },
+
+  // ----- Static -----
   {
     path: "/",
     type: "page",

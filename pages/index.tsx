@@ -1,13 +1,9 @@
-import type {
-  GetStaticPropsContext,
-  InferGetStaticPropsType,
-  NextPage,
-} from "next"
+import type { GetStaticPropsContext, InferGetStaticPropsType } from "next"
 
 import { SliceZone } from "@prismicio/react"
 
-import { createClient } from "../prismicio"
-import { components } from "../slices"
+import { createClient } from "prismicio"
+import { components } from "slices"
 
 type PageProps = InferGetStaticPropsType<typeof getStaticProps>
 
@@ -17,11 +13,8 @@ const Home = ({ page }: PageProps) => {
 
 export default Home
 
-export async function getStaticProps({
-  locale,
-  previewData,
-}: GetStaticPropsContext) {
-  const client = createClient({ previewData })
+export async function getStaticProps({}: GetStaticPropsContext) {
+  const client = createClient()
 
   const page = await client.getByUID("page", "home")
 
