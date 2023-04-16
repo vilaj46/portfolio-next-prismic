@@ -9,6 +9,17 @@ type Simplify<T> = {
 /** Content for Page documents */
 interface PageDocumentData {
     /**
+     * Meta Title field in *Page*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: page.meta_title
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    meta_title: prismicT.KeyTextField;
+    /**
      * Slice Zone field in *Page*
      *
      * - **Field Type**: Slice Zone
@@ -37,6 +48,17 @@ type PageDocumentDataSlicesSlice = HeadingSlice;
 export type PageDocument<Lang extends string = string> = prismicT.PrismicDocumentWithUID<Simplify<PageDocumentData>, "page", Lang>;
 /** Content for Post documents */
 interface PostDocumentData {
+    /**
+     * Meta Title field in *Post*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: post.meta_title
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    meta_title: prismicT.KeyTextField;
     /**
      * Slice Zone field in *Post*
      *

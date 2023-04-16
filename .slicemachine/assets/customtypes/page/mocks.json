@@ -1,13 +1,18 @@
 {
   "uid": {
     "__TYPE__": "UIDContent",
-    "value": "basket"
+    "value": "method"
+  },
+  "meta_title": {
+    "__TYPE__": "FieldContent",
+    "value": "owner",
+    "type": "Text"
   },
   "slices": {
     "__TYPE__": "SliceContentType",
     "value": [
       {
-        "key": "heading$5a234701-36e8-4a3c-8041-232b3b4f3e48",
+        "key": "heading$26c72a8f-56c3-4c71-b6fc-2c9cf9c2d405",
         "name": "heading",
         "widget": {
           "__TYPE__": "SharedSliceContent",
@@ -19,7 +24,7 @@
                 {
                   "type": "heading1",
                   "content": {
-                    "text": "Black"
+                    "text": "Observe"
                   }
                 }
               ]
@@ -30,7 +35,7 @@
                 {
                   "type": "paragraph",
                   "content": {
-                    "text": "Sit aliquip laboris ut anim reprehenderit ex id fugiat ea laboris qui nulla commodo voluptate ad. Dolor dolore esse pariatur eiusmod ad laborum nulla magna elit ipsum eu id non qui."
+                    "text": "In mollit laboris dolore non culpa aliqua adipisicing do anim."
                   }
                 }
               ]

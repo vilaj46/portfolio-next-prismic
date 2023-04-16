@@ -1,3 +1,4 @@
+import Head from "next/head"
 import { GetStaticPropsContext, InferGetStaticPropsType } from "next"
 import * as prismicH from "@prismicio/helpers"
 import { SliceZone } from "@prismicio/react"
@@ -9,10 +10,12 @@ type PageProps = InferGetStaticPropsType<typeof getStaticProps>
 
 export default function Page({ page }: PageProps) {
   return (
-    <div>
-      Dynamic Page ---------
+    <>
+      <Head>
+        <title>{page.data.meta_title}</title>
+      </Head>
       <SliceZone slices={page.data.slices} components={components} />
-    </div>
+    </>
   )
 }
 
